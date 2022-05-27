@@ -137,7 +137,7 @@ function ignoreQuery(url) {
 }
 
 function getParsedBody(ctx) {
-  var body = ctx.request.body;
+  var body = ctx.request.rawBody;
   if (body === undefined || body === null) {
     return undefined;
   }
